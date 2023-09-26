@@ -59,9 +59,13 @@ The logistic regression model was successful in reaching 95% accuracy, so it was
 The Fairfield University Community Situated Biomechanics Lab’s motion capturing system and plantar force sensing load sols (shoe sols) have been synced together and validated to allow for future human subject testing to take place. Future achilles tendon rupturing research regarding causation and preventative procedures using this equipment will proceed this project. Using the data we used to validate the lab’s equipment, we successfully developed 2 machine learning models. These random forest and logistic regression models were both successful as they respectively yielded 100% and 95% accuracy. In order to improve the accuracy of the logistic regression model, a larger dataset should be collected so that one subject doesn’t have an overwhelming influence on the model. The random forest method was perfect, but a larger dataset may shed light on other problems that the model may face. While random forest was the best performing model, we stuck with the logistic regression model for the convenience of being able to explain our model and why it makes the decisions it makes. 
 ### References
 Harris, C.R., Millman, K.J., van der Walt, S.J. et al. Array programming with NumPy. Nature 585, 357–362 (2020). DOI: 10.1038/s41586-020-2649-2.
+
 J. D. Hunter, "Matplotlib: A 2D Graphics Environment", Computing in Science & Engineering, vol. 9, no. 3, pp. 90-95, 2007. DOI: 10.1109/MCSE.2007.55
+
 Moore, S.R.; Kranzinger, C.; Fritz, J.; Stӧggl, T.; Krӧll, J.; Schwameder, H. Foot Strike Angle Prediction and Pattern Classification Using LoadsolTM Wearable Sensors: A Comparison of Machine Learning Techniques. Sensors 2020, 20, 6737. https://doi.org/10.3390/s20236737
+
 Renner, K.E.; Williams, D.B.; Queen, R.M. The Reliability and Validity of the Loadsol® under Various Walking and Running Conditions. Sensors 2019, 19, 265. https://doi.org/10.3390/s19020265
+
 Scikit-learn: Machine Learning in Python, Pedregosa et al., JMLR 12, pp. 2825-2830, 2011.
 The pandas development team. pandas-dev/pandas: Pandas. Zenodo. February 2020. DOI: 10.5281/zenodo.3509134 
 
