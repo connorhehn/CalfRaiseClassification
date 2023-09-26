@@ -1,3 +1,6 @@
+# Calf Raise Classification
+## By Connor Hehn and John Minogue
+
 ### Introduction
 The Fairfield University Community Situated Biomechanics Lab was just recently established in September of 2022. The main focus of the lab is centered around tracking musculoskeletal movements of athletes among a very wide age range. The lab’s equipment, including a motion capturing system and plantar force sensing load sols (shoe sols), needs to be synced together and validated in this new space in order for future human subject testing to take place. This equipment will be used to collect data on ankle kinematics and plantar force while 10 subjects perform a calf raise either from the ground, or with their foot elevated on a box. With this data, machine learning will be utilized to create a model that will predict which of the two aforementioned calf raise methods is being performed. This experiment is meant to validate the collaborative work between our lab equipment and our machine learning model. Once this system has been validated, future achilles tendon rupturing research regarding causation and preventative procedures will immediately follow.  
 ### Related Works
@@ -8,34 +11,63 @@ Another interesting study utilizes machine learning to predict a runner's foot s
 Before the experiments could be performed, the raw data needed to be transformed to usable data. The raw data from the experiment performed at the Fairfield University Community Situated Biomechanics Lab is tracked over a 5 second period in 0.01 second intervals. Each dataset has 500 rows, and each row has 8 observed values. Therefore each datapoint, which is linked to one target value (grounded or elevated), has 4000 attributes. Because of the large number of attributes, feature engineering was performed on the data. Feature engineering is creating features based on existing ones. For each of the observed values (columns) in the raw data, the statistics were determined. The specific statistics used are average value, minimum value, maximum value, and standard deviation. These statistics are applied to every column in the raw data, and new features are created. Each column now has 4 resulting columns, with one value attached to it. The result of feature engineering changes the datapoint containing 4000 attributes into a more workable datapoint containing only 28 attributes (column “Time” was omitted because it was not unique). The following table shows the features used for the experiments conducted:
 ### Features
 Forefoot Force[N] Avg
+
 Forefoot Force[N] Min
+
 Forefoot Force[N] Max
+
 Forefoot Force[N] Std
+
 Midfoot Force[N] Avg
+
 Midfoot Force[N] Min
+
 Midfoot Force[N] Max
+
 Midfoot Force[N] Std
+
 Heel Force[N] Avg
+
 Heel Force[N] Min
+
 Heel Force[N] Max
+
 Heel Force[N] Std
+
 TForce[N] Avg
+
 TForce[N] Min
+
 TForce[N] Max
+
 TForce[N] Std
+
 RAnkleFlexion Avg
+
 RAnkleFlexion Min
+
 RAnkleFlexion Max
+
 RAnkleFlexion Std
+
 RAnkleInversion Avg
+
 RAnkleInversion Min
+
 RAnkleInversion Max
+
 RAnkleInversion Std
+
 RAnkleAbduction Avg
+
 RAnkleAbduction  Min
+
 RAnkleAbduction Max
+
 RAnkleAbduction Std
+
 Person #
+
 Grounded (Target)
 
 In addition to the feature engineering, the data needed to be scaled and interpolated. Scaling was needed because ankle kinematics were measured in degrees and plantar force was measured in Newtons. While plantar force ranged between 0 and 700 N of force, ankle flexion, inversion, and abduction only ranged from -35 to 15 degrees. Plantar force would have therefore had a greater influence on the data if everything was not scaled. Interpolation was needed because the motion capturing markers occasionally were lost by the motion capturing cameras during data collection. Therefore, there were some null values while the subject was performing calf raises. 
