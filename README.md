@@ -1,6 +1,16 @@
 # Calf Raise Classification
 ## By Connor Hehn and John Minogue
 
+### Table of Contents
+-[Introduction](#introduction)
+-[Related Works](#related-works)
+-[Data](#data)
+-[Features](#features)
+-[Methods/Models](#methods/models)
+-[Evaluatoin](#evaluation)
+-[Conclusion](#conclusion)
+-[References](#references)
+
 ### Introduction
 The Fairfield University Community Situated Biomechanics Lab was just recently established in September of 2022. The main focus of the lab is centered around tracking musculoskeletal movements of athletes among a very wide age range. The lab’s equipment, including a motion capturing system and plantar force sensing load sols (shoe sols), needs to be synced together and validated in this new space in order for future human subject testing to take place. This equipment will be used to collect data on ankle kinematics and plantar force while 10 subjects perform a calf raise either from the ground, or with their foot elevated on a box. With this data, machine learning will be utilized to create a model that will predict which of the two aforementioned calf raise methods is being performed. This experiment is meant to validate the collaborative work between our lab equipment and our machine learning model. Once this system has been validated, future achilles tendon rupturing research regarding causation and preventative procedures will immediately follow.  
 ### Related Works
