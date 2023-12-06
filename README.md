@@ -12,7 +12,7 @@
 
 -[Methods/Models](#methods/models)
 
--[Evaluatoin](#evaluation)
+-[Evaluation](#evaluation)
 
 -[Conclusion](#conclusion)
 
